@@ -120,7 +120,7 @@ EXTRA_WGET_OPTIONS := --no-check-certificate
 endif
 
 $(K_ARCHIVE_PATH):
-	cd $(ONL_KERNELS)/archives && wget $(EXTRA_WGET_OPTIONS) $(K_ARCHIVE_URL)
+	cd $(ONL_KERNELS)/archives && wget --no-check-certificate $(EXTRA_WGET_OPTIONS) $(K_ARCHIVE_URL)
 
 
 .PHONY : ksource kpatched
